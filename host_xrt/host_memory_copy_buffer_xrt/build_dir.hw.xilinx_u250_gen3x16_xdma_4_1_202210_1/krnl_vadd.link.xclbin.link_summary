@@ -1,0 +1,1214 @@
+<ENTRY>
+{
+ "thisFile": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/build_dir.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.link.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Oct 16 07:10:11 2024",
+ "timestampMillis": "1729062611082",
+ "buildStep": {
+  "cmdId": "37c29a11-7e30-4f8c-9c09-ed16275d6c8c",
+  "name": "v++",
+  "logFile": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/link.steps.log",
+  "commandLine": "/home/Xilinx/Vitis/2022.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -l --save-temps -t hw --platform xilinx_u250_gen3x16_xdma_4_1_202210_1 --temp_dir ./_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1 -o./build_dir.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.link.xclbin _x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.xo ",
+  "args": [
+   "-l",
+   "--save-temps",
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "--temp_dir",
+   "./_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "-o./build_dir.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.link.xclbin",
+   "_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.xo"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 07:10:11 2024",
+ "timestampMillis": "1729062611082",
+ "status": {
+  "cmdId": "37c29a11-7e30-4f8c-9c09-ed16275d6c8c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Oct 16 07:10:18 2024",
+ "timestampMillis": "1729062618474",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "krnl_vadd.link",
+    "file": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/build_dir.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.link.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "krnl_vadd",
+     "file": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xo/krnl_vadd/krnl_vadd/cpu_sources/krnl_vadd.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "krnl_vadd_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2022.1. SW Build 3524075 on 2022-04-13-17:42:45"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 16 07:10:18 2024",
+ "timestampMillis": "1729062618619",
+ "buildStep": {
+  "cmdId": "bc8cb241-fc19-4662-ba6e-27195d426442",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.xo -keep --xpfm /opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm --target hw --output_dir /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int --temp_dir /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.xo",
+   "-keep",
+   "--xpfm",
+   "/opt/xilinx/platforms/xilinx_u250_gen3x16_xdma_4_1_202210_1/xilinx_u250_gen3x16_xdma_4_1_202210_1.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int",
+   "--temp_dir",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/sys_link"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 07:10:18 2024",
+ "timestampMillis": "1729062618620",
+ "status": {
+  "cmdId": "bc8cb241-fc19-4662-ba6e-27195d426442",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 07:10:40 2024",
+ "timestampMillis": "1729062640317",
+ "status": {
+  "cmdId": "bc8cb241-fc19-4662-ba6e-27195d426442",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 16 07:10:40 2024",
+ "timestampMillis": "1729062640320",
+ "buildStep": {
+  "cmdId": "86156ec5-0d97-4c22-a9af-2cfc98a3507f",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/sdsl.dat -rtd /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/cf2sw.rtd -nofilter /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/cf2sw_full.rtd -xclbin /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xclbin_orig.xml -o /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/sdsl.dat",
+   "-rtd",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/cf2sw.rtd",
+   "-nofilter",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xclbin_orig.xml",
+   "-o",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 07:10:40 2024",
+ "timestampMillis": "1729062640321",
+ "status": {
+  "cmdId": "86156ec5-0d97-4c22-a9af-2cfc98a3507f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 07:10:45 2024",
+ "timestampMillis": "1729062645589",
+ "status": {
+  "cmdId": "86156ec5-0d97-4c22-a9af-2cfc98a3507f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 16 07:10:45 2024",
+ "timestampMillis": "1729062645593",
+ "buildStep": {
+  "cmdId": "7d8fdb7a-34fd-4bb1-b14f-725eba4333fe",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 07:10:45 2024",
+ "timestampMillis": "1729062645594",
+ "status": {
+  "cmdId": "7d8fdb7a-34fd-4bb1-b14f-725eba4333fe",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 07:10:46 2024",
+ "timestampMillis": "1729062646138",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 07:10:46 2024",
+ "timestampMillis": "1729062646139",
+ "status": {
+  "cmdId": "7d8fdb7a-34fd-4bb1-b14f-725eba4333fe",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 16 07:10:46 2024",
+ "timestampMillis": "1729062646143",
+ "buildStep": {
+  "cmdId": "69d31551-88f5-40ca-8b67-1ce4e7176bdc",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f xilinx_u250_gen3x16_xdma_4_1_202210_1 --remote_ip_cache /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/.ipcache -s --output_dir /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int --log_dir /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/logs/link --report_dir /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link --config /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/vplConfig.ini -k /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link --no-info --iprepo /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xo/ip_repo/xilinx_com_hls_krnl_vadd_1_0 --messageDb /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/run_link/vpl.pb /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "--remote_ip_cache",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/.ipcache",
+   "-s",
+   "--output_dir",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int",
+   "--log_dir",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/logs/link",
+   "--report_dir",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link",
+   "--config",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/vplConfig.ini",
+   "-k",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link",
+   "--no-info",
+   "--iprepo",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xo/ip_repo/xilinx_com_hls_krnl_vadd_1_0",
+   "--messageDb",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/run_link/vpl.pb",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt\nmisc=BinaryName=krnl_vadd.link\n\n[connectivity]\nnk=krnl_vadd:1:krnl_vadd_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\n\n"
+   }
+  ],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 07:10:46 2024",
+ "timestampMillis": "1729062646144",
+ "status": {
+  "cmdId": "69d31551-88f5-40ca-8b67-1ce4e7176bdc",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Oct 16 07:10:48 2024",
+ "timestampMillis": "1729062648001",
+ "buildStep": {
+  "cmdId": "f1de0adb-6724-45cc-9b81-c0c002ca53ac",
+  "name": "vpl",
+  "logFile": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/link.steps.log",
+  "commandLine": "/home/Xilinx/Vitis/2022.1/bin/unwrapped/lnx64.o/vpl -t hw -f xilinx_u250_gen3x16_xdma_4_1_202210_1 --remote_ip_cache /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/.ipcache -s --output_dir /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int --log_dir /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/logs/link --report_dir /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link --config /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/vplConfig.ini -k /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link --no-info --iprepo /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xo/ip_repo/xilinx_com_hls_krnl_vadd_1_0 --messageDb /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/run_link/vpl.pb /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 07:10:48 2024",
+ "timestampMillis": "1729062648001",
+ "status": {
+  "cmdId": "f1de0adb-6724-45cc-9b81-c0c002ca53ac",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Wed Oct 16 07:10:54 2024",
+ "timestampMillis": "1729062654445",
+ "vivadoProject": {
+  "openDir": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 16 07:10:54 2024",
+ "timestampMillis": "1729062654446",
+ "buildStep": {
+  "cmdId": "adec686e-eefb-4813-a933-7df32d7cb042",
+  "name": "vivado",
+  "logFile": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 07:10:54 2024",
+ "timestampMillis": "1729062654447",
+ "status": {
+  "cmdId": "adec686e-eefb-4813-a933-7df32d7cb042",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 07:11:48 2024",
+ "timestampMillis": "1729062708900",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/automation_summary_update_bd.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Oct 16 07:14:33 2024",
+ "timestampMillis": "1729062873295",
+ "buildStep": {
+  "cmdId": "6244ad9d-6445-47c5-afc2-7163fcf9372c",
+  "name": "vivado.impl",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 07:14:33 2024",
+ "timestampMillis": "1729062873296",
+ "status": {
+  "cmdId": "6244ad9d-6445-47c5-afc2-7163fcf9372c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Oct 16 07:14:33 2024",
+ "timestampMillis": "1729062873296",
+ "buildStep": {
+  "cmdId": "51853c29-6577-4ac6-b796-278dda959b59",
+  "name": "vivado.impl.impl_1",
+  "logFile": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/impl_1/runme.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/impl_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 07:14:33 2024",
+ "timestampMillis": "1729062873297",
+ "status": {
+  "cmdId": "51853c29-6577-4ac6-b796-278dda959b59",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:19:01 2024",
+ "timestampMillis": "1729066741698",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/impl_1/system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:20:03 2024",
+ "timestampMillis": "1729066803762",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/kernel_service.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:20:03 2024",
+ "timestampMillis": "1729066803764",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/kernel_service.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:21:49 2024",
+ "timestampMillis": "1729066909200",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/vivado/vpl/prj/prj.runs/impl_1/dr_timing_summary.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_FAIL",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557116",
+ "status": {
+  "cmdId": "adec686e-eefb-4813-a933-7df32d7cb042",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557160",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_slr_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557161",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_kernel_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557162",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_kernel_util_placed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557162",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_kernel_util_synthed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557163",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_slr_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557164",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_full_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557164",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_slr_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557165",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_slr_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557165",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_full_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557166",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_kernel_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557167",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_kernel_util_routed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557167",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_full_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557168",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_full_util_synthed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557168",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_kernel_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557169",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": "51853c29-6577-4ac6-b796-278dda959b59"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557188",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "51853c29-6577-4ac6-b796-278dda959b59"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557203",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "51853c29-6577-4ac6-b796-278dda959b59"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557204",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/imp/impl_1_hw_bb_locked_timing_summary_routed.rpv",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_CONCISE",
+  "cmdId": "51853c29-6577-4ac6-b796-278dda959b59"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557225",
+ "status": {
+  "cmdId": "f1de0adb-6724-45cc-9b81-c0c002ca53ac",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557244",
+ "status": {
+  "cmdId": "69d31551-88f5-40ca-8b67-1ce4e7176bdc",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557249",
+ "buildStep": {
+  "cmdId": "a9501114-778e-4c49-97a7-8786624852c4",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557250",
+ "status": {
+  "cmdId": "a9501114-778e-4c49-97a7-8786624852c4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557254",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl_vadd.link_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557256",
+ "buildStep": {
+  "cmdId": "85133658-285b-41c3-8c4c-e5d2df711e4b",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/address_map.xml -sdsl /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/sdsl.dat -xclbin /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xclbin_orig.xml -rtd /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl_vadd.link.rtd -o /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl_vadd.link.xml",
+  "args": [
+   "-a",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/address_map.xml",
+   "-sdsl",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/sdsl.dat",
+   "-xclbin",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl_vadd.link.rtd",
+   "-o",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl_vadd.link.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:37 2024",
+ "timestampMillis": "1729067557256",
+ "status": {
+  "cmdId": "85133658-285b-41c3-8c4c-e5d2df711e4b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:41 2024",
+ "timestampMillis": "1729067561819",
+ "status": {
+  "cmdId": "85133658-285b-41c3-8c4c-e5d2df711e4b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 16 08:32:41 2024",
+ "timestampMillis": "1729067561821",
+ "buildStep": {
+  "cmdId": "a914a9e5-e672-4154-af24-6528d0d16222",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl_vadd.link.rtd",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:41 2024",
+ "timestampMillis": "1729067561821",
+ "status": {
+  "cmdId": "a914a9e5-e672-4154-af24-6528d0d16222",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:41 2024",
+ "timestampMillis": "1729067561826",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:41 2024",
+ "timestampMillis": "1729067561826",
+ "status": {
+  "cmdId": "a914a9e5-e672-4154-af24-6528d0d16222",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 16 08:32:41 2024",
+ "timestampMillis": "1729067561827",
+ "buildStep": {
+  "cmdId": "69e40dd4-3fe6-4850-9a3f-02e19a6407e7",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeAutomationSummary",
+  "args": [
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/automation_summary.txt"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:41 2024",
+ "timestampMillis": "1729067561827",
+ "status": {
+  "cmdId": "69e40dd4-3fe6-4850-9a3f-02e19a6407e7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:41 2024",
+ "timestampMillis": "1729067561829",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/automation_summary.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:41 2024",
+ "timestampMillis": "1729067561830",
+ "status": {
+  "cmdId": "69e40dd4-3fe6-4850-9a3f-02e19a6407e7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:41 2024",
+ "timestampMillis": "1729067561831",
+ "status": {
+  "cmdId": "a9501114-778e-4c49-97a7-8786624852c4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 16 08:32:41 2024",
+ "timestampMillis": "1729067561834",
+ "buildStep": {
+  "cmdId": "d8ac2310-f45e-402b-a245-e4e1ec965f24",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/partial.bit --force --target hw --key-value SYS:dfx_enable:true --add-section :JSON:/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl_vadd.link.rtd --append-section :JSON:/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/appendSection.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl_vadd.link_xml.rtd --add-section BUILD_METADATA:JSON:/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl_vadd.link_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl_vadd.link.xml --add-section SYSTEM_METADATA:RAW:/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_u250_gen3x16_xdma_4_1_202210_1 --output /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/./build_dir.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.link.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/partial.bit",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:true",
+   "--add-section",
+   ":JSON:/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl_vadd.link.rtd",
+   "--append-section",
+   ":JSON:/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/appendSection.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl_vadd.link_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl_vadd.link_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/krnl_vadd.link.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--key-value",
+   "SYS:PlatformVBNV:xilinx_u250_gen3x16_xdma_4_1_202210_1",
+   "--output",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/./build_dir.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.link.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:41 2024",
+ "timestampMillis": "1729067561835",
+ "status": {
+  "cmdId": "d8ac2310-f45e-402b-a245-e4e1ec965f24",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:42 2024",
+ "timestampMillis": "1729067562166",
+ "status": {
+  "cmdId": "d8ac2310-f45e-402b-a245-e4e1ec965f24",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 16 08:32:42 2024",
+ "timestampMillis": "1729067562170",
+ "buildStep": {
+  "cmdId": "d943d4a0-0418-4c1a-a971-51dab96e88de",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/./build_dir.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.link.xclbin.info --input /home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/./build_dir.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.link.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/./build_dir.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.link.xclbin.info",
+   "--input",
+   "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/./build_dir.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/krnl_vadd.link.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:42 2024",
+ "timestampMillis": "1729067562171",
+ "status": {
+  "cmdId": "d943d4a0-0418-4c1a-a971-51dab96e88de",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:42 2024",
+ "timestampMillis": "1729067562956",
+ "status": {
+  "cmdId": "d943d4a0-0418-4c1a-a971-51dab96e88de",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 16 08:32:42 2024",
+ "timestampMillis": "1729067562961",
+ "buildStep": {
+  "cmdId": "8ff9c964-7b43-4243-9a8d-2b9d0f3c3927",
+  "name": "generate_sc_driver",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:42 2024",
+ "timestampMillis": "1729067562962",
+ "status": {
+  "cmdId": "8ff9c964-7b43-4243-9a8d-2b9d0f3c3927",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:42 2024",
+ "timestampMillis": "1729067562963",
+ "status": {
+  "cmdId": "8ff9c964-7b43-4243-9a8d-2b9d0f3c3927",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:42 2024",
+ "timestampMillis": "1729067562971",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/system_estimate_krnl_vadd.link.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:43 2024",
+ "timestampMillis": "1729067563206",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/reports/link/v++_link_krnl_vadd.link_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:43 2024",
+ "timestampMillis": "1729067563207",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/v++_link_krnl_vadd.link_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 16 08:32:43 2024",
+ "timestampMillis": "1729067563211",
+ "report": {
+  "path": "/home/csl/heejae/Vitis_Accel_Examples/host_xrt/host_memory_copy_buffer_xrt/_x.hw.xilinx_u250_gen3x16_xdma_4_1_202210_1/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 16 08:32:43 2024",
+ "timestampMillis": "1729067563212",
+ "status": {
+  "cmdId": "37c29a11-7e30-4f8c-9c09-ed16275d6c8c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
